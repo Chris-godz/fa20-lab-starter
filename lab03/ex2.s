@@ -61,7 +61,7 @@ loop:
     addi t0, t0, 1
     jal x0, loop
 exit:
-    add a0, x0, s0
+    add a1, x0, s0
     # BEGIN EPILOGUE
     lw s0, 0(sp)
     lw s1, 4(sp)
@@ -69,5 +69,7 @@ exit:
     lw s3, 12(sp)
     lw ra, 16(sp)
     addi sp, sp, 20
-    # END EPILOGUE
-    jr ra
+    addi a0, x0, 1
+    ecall # Print
+    addi a0, x0, 10
+    ecall # Terminate ecall
