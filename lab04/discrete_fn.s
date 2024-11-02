@@ -76,8 +76,11 @@ main:
 # a1 is the address of the "output" array (defined above).
 # Think: why might having a1 be useful?
 f:
-    # YOUR CODE GOES HERE!
-
+    addi a1, a1, 12
+    li t0, 4
+    mul a0, a0, t0
+    add t0, a1, a0
+    lw a0, 0(t0)
     jr ra               # Always remember to jr ra after your function!
 
 print_int:
