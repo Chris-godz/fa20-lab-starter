@@ -383,42 +383,43 @@ end TCL_Generic;
     <comp lib="0" loc="(300,230)" name="Pin">
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(320,230)" name="Splitter">
+    <comp lib="0" loc="(310,230)" name="Splitter">
       <a name="appear" val="center"/>
-      <a name="bit10" val="1"/>
-      <a name="bit11" val="1"/>
-      <a name="bit12" val="1"/>
-      <a name="bit13" val="1"/>
-      <a name="bit14" val="1"/>
-      <a name="bit15" val="1"/>
+      <a name="bit10" val="2"/>
+      <a name="bit11" val="2"/>
+      <a name="bit12" val="2"/>
+      <a name="bit13" val="2"/>
+      <a name="bit14" val="2"/>
+      <a name="bit15" val="3"/>
       <a name="bit2" val="1"/>
       <a name="bit3" val="1"/>
       <a name="bit4" val="1"/>
       <a name="bit5" val="1"/>
       <a name="bit6" val="1"/>
       <a name="bit7" val="1"/>
-      <a name="bit8" val="1"/>
-      <a name="bit9" val="1"/>
+      <a name="bit8" val="2"/>
+      <a name="bit9" val="2"/>
+      <a name="fanout" val="4"/>
       <a name="incoming" val="16"/>
     </comp>
-    <comp lib="0" loc="(400,230)" name="Splitter">
+    <comp lib="0" loc="(380,230)" name="Splitter">
       <a name="appear" val="center"/>
-      <a name="bit0" val="1"/>
-      <a name="bit10" val="1"/>
-      <a name="bit11" val="1"/>
-      <a name="bit12" val="1"/>
-      <a name="bit13" val="1"/>
-      <a name="bit14" val="1"/>
-      <a name="bit15" val="0"/>
+      <a name="bit10" val="2"/>
+      <a name="bit11" val="2"/>
+      <a name="bit12" val="2"/>
+      <a name="bit13" val="2"/>
+      <a name="bit14" val="2"/>
+      <a name="bit15" val="3"/>
       <a name="bit2" val="1"/>
       <a name="bit3" val="1"/>
       <a name="bit4" val="1"/>
       <a name="bit5" val="1"/>
       <a name="bit6" val="1"/>
       <a name="bit7" val="1"/>
-      <a name="bit8" val="1"/>
-      <a name="bit9" val="1"/>
+      <a name="bit8" val="2"/>
+      <a name="bit9" val="2"/>
       <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
       <a name="incoming" val="16"/>
     </comp>
     <comp lib="0" loc="(550,230)" name="Pin">
@@ -429,9 +430,16 @@ end TCL_Generic;
     <comp lib="8" loc="(434,130)" name="Text">
       <a name="text" val="PUT CIRCUITRY HERE"/>
     </comp>
-    <wire from="(300,230)" to="(320,230)"/>
-    <wire from="(340,220)" to="(380,220)"/>
-    <wire from="(340,230)" to="(380,230)"/>
-    <wire from="(400,230)" to="(550,230)"/>
+    <wire from="(300,230)" to="(310,230)"/>
+    <wire from="(330,210)" to="(340,210)"/>
+    <wire from="(330,220)" to="(360,220)"/>
+    <wire from="(330,230)" to="(360,230)"/>
+    <wire from="(330,240)" to="(330,250)"/>
+    <wire from="(330,250)" to="(350,250)"/>
+    <wire from="(340,210)" to="(340,240)"/>
+    <wire from="(340,240)" to="(360,240)"/>
+    <wire from="(350,210)" to="(350,250)"/>
+    <wire from="(350,210)" to="(360,210)"/>
+    <wire from="(380,230)" to="(550,230)"/>
   </circuit>
 </project>
